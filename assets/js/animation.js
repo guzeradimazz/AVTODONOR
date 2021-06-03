@@ -100,7 +100,7 @@ window.onload = function () {
 		});
 		observ.observe(document.querySelector('.banner__details'))
 		function setParallaxItemsStyle(scrollTopProcent) {
-			details.parentElement.style.cssText = `transform: translate(4%,-${scrollTopProcent/4}%)`;
+			details.parentElement.style.cssText = `transform: translate(0%,-${scrollTopProcent/4}%)`;
 		}
 	}
 	
