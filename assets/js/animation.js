@@ -92,7 +92,7 @@ window.onload = function () {
 			thresholdSets.push(i);
 		}
 		const callback = function(entries, observ) {
-			const scrollTopProcent = window.pageYOffset/parallax.offsetHeight*100;
+			const scrollTopProcent = window.pageYOffset/parallax.offsetHeight*120;
 			setParallaxItemsStyle(scrollTopProcent);
 		}
 		const observ = new IntersectionObserver(callback,{
@@ -100,12 +100,24 @@ window.onload = function () {
 		});
 		observ.observe(document.querySelector('.banner__details'))
 		function setParallaxItemsStyle(scrollTopProcent) {
-			details.parentElement.style.cssText = `transform: translate(0%,-${scrollTopProcent/4}%)`;
+			details.parentElement.style.cssText = `transform: translate(0%,-${scrollTopProcent/6}%)`;
 		}
 	}
 	
 }
-
-
-
 //modal block
+function openModalPage(id) {
+	var modal = document.getElementById(id);
+	var close = document.querySelectorAll('[data-close="true"]');
+	modal.style.display = 'block';
+	for (var i = 0; i < close.length; i++) {
+		close[i].onclick = function() {
+			modal.style.display = 'none';
+		}
+	}
+	window.onclick = function(e){
+		if (e.target == modal) {
+			modal.style.display = 'none';
+		}
+	};
+}

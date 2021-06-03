@@ -50,9 +50,9 @@
 					  <option value="">вВыберите марку и модель</option>
 					</select>
 				</div>
-				<div class="find__item">
-					<img src="assets/img/list.svg" alt="">
-					<input type="text" te>
+				<div class="find__item" onclick="openModalPage('modalPageSection')">
+					<img style="cursor: pointer;" src="assets/img/list.svg" alt="">
+					<span class="find__item__button__modal">Выберите категорию</span>
 				</div>
 				<div class="find__item">
 					<button type="submit">Найти</button>
@@ -60,7 +60,12 @@
 			</form>
 		</div>
 	</div>
-
+	<div class="modal" id="modalPageSection">
+		<div class="modal__content">
+			<span class="modal__close" data-close="true" title="Close">&times;</span>
+			<p class="modal__content__main">fsacdafvr</p>
+		</div>
+	</div>
 	<a href="#" class="content__banner">
 		<div class="banner__text">
 			<p class="animated_text" id="Ticker"></p>
