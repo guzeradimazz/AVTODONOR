@@ -467,7 +467,6 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 0 0 5px;
 }
 .banner__details{
-
   z-index: 5;
   position: absolute;
   margin-bottom: 100px;
@@ -635,6 +634,49 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s ease;
   min-height: 80%;
 }
+.modal__content__main{
+  display: flex;
+  flex-direction: column;
+}
+.modal__first__line{
+  margin-top: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.modal__second__line{
+  margin-top: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.modal__third__line{
+  margin-top: 45px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.modal__item {
+  width: 180px;
+  height: 230px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  padding: 15px;
+}
+.modal__item__text{
+  text-decoration: underline;
+  letter-spacing: 1px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 50px;
+}
+.modal__item__icon{
+  width: 40%;
+}
+
+
 .modal__close{
   color: #c4c4c4;
   font-weight: bold;

@@ -1,4 +1,4 @@
-AOS.init();
+
 var CharTimeout = 50; // скорость печатания
 	var StoryTimeout = 1500; // время ожидания перед переключением
 
@@ -84,24 +84,39 @@ var CharTimeout1 = 50; // скорость печатания
 startTicker1();
 //parallax
 window.onload = function () {
-	const parallax = document.querySelector('.banner__details');
+	const parallax = document.querySelector('body');
 	if(parallax){
 		const details = document.querySelector('.banner__details > img');
-		let thresholdSets = [];
-		for (let i = 0; i < 1.0; i+= 0.001) {
-			thresholdSets.push(i);
+
+		const forDetails = 13;
+		const speed = 0.09;
+
+		let positionX = 0, positionY = 0;
+		let coordXProcent = 0, coordYProcent = 0; 
+
+		function setMouseParallaxStyle(){
+			const distX = coordXProcent - positionX;
+			const distY = coordYProcent - positionY;
+
+			positionX = positionX +(distX*speed);
+			positionY = positionY +(distY*speed);
+
+			details.style.cssText = `transform:translate(${positionX / forDetails}%,${positionY / forDetails}%)`
+
+			requestAnimationFrame(setMouseParallaxStyle);
 		}
-		const callback = function(entries, observ) {
-			const scrollTopProcent = window.scrollY/parallax.offsetHeight*120;
-			setParallaxItemsStyle(scrollTopProcent);
-		}
-		const observ = new IntersectionObserver(callback,{
-			threshold:thresholdSets
-		});
-		observ.observe(document.querySelector('.banner__details'))
-		function setParallaxItemsStyle(scrollTopProcent) {
-			details.parentElement.style.cssText = `transform: translate(0%,-${scrollTopProcent/4}%)`;
-		}
+		setMouseParallaxStyle();
+		parallax.addEventListener('mousemove',function(e){
+			const parallaxWidth = parallax.offsetWidth;
+			const parallaxHeight = parallax.offsetHeight;
+
+			const coordX = e.pageX - parallaxWidth/2;
+			const coordY = e.pageY - parallaxHeight/2;
+
+			coordXProcent = coordX / parallaxWidth * 100;
+			coordYProcent = coordY / parallaxHeight * 100;
+
+		})
 	}
 	
 }
