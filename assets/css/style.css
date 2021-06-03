@@ -612,6 +612,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* modal page */
 .modal {
+  position: absolute;
   display: none;
   position: fixed;
   z-index: 15;
