@@ -620,7 +620,6 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: center;
 }
-
 .header__buttons__button{
   font-family: "Roboto", sans-serif;
   color: #7ed321;
@@ -630,6 +629,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 200px;
   height:30px;
   margin-top: 30px;
+  border-radius: 3px;
   position:relative;
   left:50%;
   top:50%;
@@ -638,9 +638,8 @@ h1, h2, h3, h4, h5, h6 {
   transform:translate(-50%,-50%);
    -webkit-transition:all .6s ease-in-out;
   transition:all .6s ease-in-out;
- overflow:hidden;
+  overflow:hidden;
 }
-
 .header__buttons__button::before{
   content:'';
   position:absolute;

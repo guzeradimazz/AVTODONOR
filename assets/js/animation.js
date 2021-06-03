@@ -83,3 +83,29 @@ var CharTimeout1 = 50; // скорость печатания
 
 startTicker1();
 //parallax
+window.onload = function () {
+	const parallax = document.querySelector('.banner__details');
+	if(parallax){
+		const details = document.querySelector('.banner__details > img');
+		let thresholdSets = [];
+		for (let i = 0; i < 1.0; i+= 0.005) {
+			thresholdSets.push(i);
+		}
+		const callback = function(entries, observ) {
+			const scrollTopProcent = window.pageYOffset/parallax.offsetHeight*100;
+			setParallaxItemsStyle(scrollTopProcent);
+		}
+		const observ = new IntersectionObserver(callback,{
+			threshold:thresholdSets
+		});
+		observ.observe(document.querySelector('.banner__details'))
+		function setParallaxItemsStyle(scrollTopProcent) {
+			details.parentElement.style.cssText = `transform: translate(4%,-${scrollTopProcent/4}%)`;
+		}
+	}
+	
+}
+
+
+
+//modal block
