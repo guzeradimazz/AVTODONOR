@@ -483,7 +483,6 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   min-height: 200px;
   margin: 20px 0;
-  padding: 30px;
   background: rgb(117,170,95);
   background: linear-gradient(90deg, rgb(137, 221, 101) 0%, rgba(151,254,142,1) 100%);
   border-radius: 7px;
@@ -495,6 +494,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif;
   font-size: 24.7px;
   font-weight: 700;
+  padding-top: 30px;
+  padding-left: 30px;
   line-height: 31px;
   color: #0f0f0f;
 }
@@ -503,6 +504,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 20px 0 25px 0;
   font-family: "Roboto", sans-serif;
   font-size: 18.6px;
+  padding-left: 30px;
   font-weight: 400;
   line-height: 21px;
   color: #000000;
@@ -512,6 +514,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   font-size: 14.5px !important;
   line-height: 1.2;
+  padding-bottom: 30px;
   font-weight: 700;
   text-decoration: underline;
   color: #000000;
