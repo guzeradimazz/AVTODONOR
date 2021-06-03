@@ -407,7 +407,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 1.3;
-  font-weight: 300;
+  font-weight: 400;
   color: #949494;
 }
 .content__cargo .cargo__items .cargo__item .cargo__price{
@@ -468,9 +468,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .banner__details{
 
-  z-index: 5 ;
+  z-index: 5;
   position: absolute;
-  margin-left: 350px;
   margin-bottom: 100px;
   overflow: hidden !important;
 }
@@ -612,6 +611,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* modal page */
 .modal {
+  overflow: hidden;
   position: absolute;
   display: none;
   position: fixed;
@@ -625,6 +625,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: rgba(0,0,0,0.8);
 }
 .modal__content{
+  overflow: hidden;
   border-radius: 5px;
   background-color: #fff;
   margin: 8% auto;
@@ -672,47 +673,20 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center;
   justify-content: center;
 }
-.header__buttons__button{
+.header .header__block .header__logo a {
   font-family: "Roboto", sans-serif;
-  color: #7ed321;
-  background-color: #fff;
-  font-size:14px;
-  cursor:pointer;
-  width: 200px;
-  height:30px;
-  margin-top: 30px;
-  border-radius: 3px;
-  position:relative;
-  left:50%;
-  top:50%;
-  text-align:center;
-  -webkit-transform:translate(-50%,-50%);
-  transform:translate(-50%,-50%);
-   -webkit-transition:all .6s ease-in-out;
-  transition:all .6s ease-in-out;
-  overflow:hidden;
-}
-.header__buttons__button::before{
-  content:'';
-  position:absolute;
-  top:-130px;
-  margin:auto;
-  display:block;
-  border-radius:50%;
-  width:300px;
-  height:300px;
-  left:-50px;
-  -webkit-transition:box-shadow .6s ease-in-out;
-  transition:box-shadow .6s ease-in-out;
-  z-index:-1;
-}
-.header__buttons__button:hover{
-  color:#fff;
-  border: none;
-}
-.header__buttons__button:hover::before{
-  box-shadow:inset 0 0 0 160px #7ed321;
-}
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+  }
+.header .header__block .header__menu .header__buttons a {
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  }
+
 .header .header__block .header__menu {
   display: flex;
   align-items: center;
@@ -735,7 +709,13 @@ h1, h2, h3, h4, h5, h6 {
 .header .header__block .header__menu .header__buttons a:nth-child(1) {
   margin: 0 25px 0 0;
   border-radius: 2px;
-  background-color: none;
+  transition: .8s ease-in;
+  background-color: #ececec;
+  }
+.header .header__block .header__menu .header__buttons a:nth-child(1):hover{
+  background-color: #7bee77;
+  transition: .8s ease-in;
+  color: #fff;
 }
 .header .header__block .header__menu-burger {
   display: none;

@@ -88,11 +88,11 @@ window.onload = function () {
 	if(parallax){
 		const details = document.querySelector('.banner__details > img');
 		let thresholdSets = [];
-		for (let i = 0; i < 1.0; i+= 0.005) {
+		for (let i = 0; i < 1.0; i+= 0.001) {
 			thresholdSets.push(i);
 		}
 		const callback = function(entries, observ) {
-			const scrollTopProcent = window.pageYOffset/parallax.offsetHeight*120;
+			const scrollTopProcent = window.scrollY/parallax.offsetHeight*120;
 			setParallaxItemsStyle(scrollTopProcent);
 		}
 		const observ = new IntersectionObserver(callback,{
@@ -100,7 +100,7 @@ window.onload = function () {
 		});
 		observ.observe(document.querySelector('.banner__details'))
 		function setParallaxItemsStyle(scrollTopProcent) {
-			details.parentElement.style.cssText = `transform: translate(0%,-${scrollTopProcent/6}%)`;
+			details.parentElement.style.cssText = `transform: translate(0%,-${scrollTopProcent/4}%)`;
 		}
 	}
 	

@@ -22,7 +22,7 @@
 			<div class="header__menu">
 				<div class="header__buttons">
 					<a href="#">
-						<button class="header__buttons__button">добавить объявление</button>
+						добавить объявление
 					</a>
 					<a href="#">войти</a>
 				</div>
@@ -52,7 +52,9 @@
 				</div>
 				<div class="find__item" onclick="openModalPage('modalPageSection')">
 					<img style="cursor: pointer;" src="assets/img/list.svg" alt="">
-					<span class="find__item__button__modal">Выберите категорию</span>
+					<select class="find__item__button__modal" name="Выберите категорию">
+						<!-- <option value="">Выберите категорию</option> -->
+					</select>
 				</div>
 				<div class="find__item">
 					<button type="submit">Найти</button>
@@ -76,9 +78,9 @@
 				<p><img src="assets/img/plus.png" alt="">зарегистрироваться</p>
 			</div>
 		</div>
-		<div class="banner__details" >
-			<img src="assets/img/banner__details.png" alt="">
-		</div>
+			<div class="banner__details" >
+				<img src="assets/img/banner__details.png" alt="">
+			</div>
 	</a>
 
 	<div class="content__cargo">
@@ -128,10 +130,6 @@
 				</div>
 				<div class="cargo__price">
 					<h3>15 500 ₽</h3>
-					<div class="cargo__price__eyes">
-						<p class="cargo__price__eyes__value">1000</p>
-						<img class="cargo__price__eye" src="assets/img/eye.svg" alt="">
-					</div>
 				</div>
 			</div>
 			<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" class="cargo__item for_you">
@@ -174,10 +172,6 @@
 				</div>
 				<div class="cargo__price">
 					<h3>17 000 ₽</h3>
-					<div class="cargo__price__eyes">
-						<p class="cargo__price__eyes__value">1000</p>
-						<img class="cargo__price__eye" src="assets/img/eye.svg" alt="">
-					</div>
 				</div>
 			</div>
 			<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" class="cargo__item for_you">
@@ -220,10 +214,6 @@
 				</div>
 				<div class="cargo__price">
 					<h3>1 000 ₽</h3>
-					<div class="cargo__price__eyes">
-						<p class="cargo__price__eyes__value">1000</p>
-						<img class="cargo__price__eye" src="assets/img/eye.svg" alt="">
-					</div>
 				</div>
 			</div>
 			<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" class="cargo__item for_you">
@@ -266,10 +256,6 @@
 				</div>
 				<div class="cargo__price">
 					<h3>15 500 ₽</h3>
-					<div class="cargo__price__eyes">
-						<p class="cargo__price__eyes__value">1000</p>
-						<img class="cargo__price__eye" src="assets/img/eye.svg" alt="">
-					</div>
 				</div>
 			</div>
 			<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" class="cargo__item for_you">
@@ -312,10 +298,6 @@
 				</div>
 				<div class="cargo__price">
 					<h3>15 500 ₽</h3>
-					<div class="cargo__price__eyes">
-						<p class="cargo__price__eyes__value">1000</p>
-						<img class="cargo__price__eye" src="assets/img/eye.svg" alt="">
-					</div>
 				</div>
 			</div>
 			<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" class="cargo__item for_you">
@@ -358,10 +340,6 @@
 				</div>
 				<div class="cargo__price">
 					<h3>17 000 ₽</h3>
-					<div class="cargo__price__eyes">
-						<p class="cargo__price__eyes__value">1000</p>
-						<img class="cargo__price__eye" src="assets/img/eye.svg" alt="">
-					</div>
 				</div>
 			</div>
 			<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" class="cargo__item for_you">
@@ -404,10 +382,6 @@
 				</div>
 				<div class="cargo__price">
 					<h3>1 000 ₽</h3>
-					<div class="cargo__price__eyes">
-						<p class="cargo__price__eyes__value">1000</p>
-						<img class="cargo__price__eye" src="assets/img/eye.svg" alt="">
-					</div>
 				</div>
 			</div>
 			<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" class="cargo__item for_you">
@@ -450,10 +424,6 @@
 				</div>
 				<div class="cargo__price">
 					<h3>15 500 ₽</h3>
-					<div class="cargo__price__eyes">
-						<p class="cargo__price__eyes__value">1000</p>
-						<img class="cargo__price__eye" src="assets/img/eye.svg" alt="">
-					</div>
 				</div>
 			</div>
 			<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" class="cargo__item favorite">
@@ -496,194 +466,6 @@
 				</div>
 				<div class="cargo__price">
 					<h3>900 ₽</h3>
-					<div class="cargo__price__eyes">
-						<p class="cargo__price__eyes__value">1000</p>
-						<img class="cargo__price__eye" src="assets/img/eye.svg" alt="">
-					</div>
-				</div>
-			</div>
-			<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" class="cargo__item favorite">
-				<div class="cargo__slider">
-					<div class="cargo__slider-swiper swiper-container">
-						<!-- обов'язкова оболонка' -->
-						<div class="cargo__wrapper swiper-wrapper">
-							<!-- слайди -->
-							<div class="cargo__slide swiper-slide">
-								<img src="assets/img/content_item1.png" alt="">
-							</div>
-							<div class="cargo__slide swiper-slide">
-								<img src="assets/img/content_item2.png" alt="">
-							</div>
-							<div class="cargo__slide swiper-slide">
-								<img src="assets/img/content_item3.png" alt="">
-							</div>
-						</div>
-						<div class="cargo__button-prev swiper-button-prev"></div>
-						<div class="cargo__button-next swiper-button-next"></div>
-					</div>
-					<div class="cargo__slider-heart">
-						<a style="color: aliceblue;" href="#">♡</a>
-					</div>
-				</div>
-				<div class="cargo__description">
-					<div class="cargo__description-left">
-						<img src="assets/img/shield.svg" alt="">
-						<img src="assets/img/up.svg" alt="">
-						<p>8 дней назад</p>
-					</div>
-					<div class="cargo__description-right">
-						<div class="circle"></div>
-						<p>Макеевка</p>
-					</div>
-				</div>
-				<div class="cargo__title">
-					<a href="#">Шины Dunlop Sport Max</a>
-					<p>Продам разварки 4 штуки,катанные, желтый цвет...</p>
-				</div>
-				<div class="cargo__price">
-					<h3>2 500 ₽</h3>
-					<div class="cargo__price__eyes">
-						<p class="cargo__price__eyes__value">1000</p>
-						<img class="cargo__price__eye" src="assets/img/eye.svg" alt="">
-					</div>
-				</div>
-			</div>
-			<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" class="cargo__item favorite">
-				<div class="cargo__slider">
-					<div class="cargo__slider-swiper swiper-container">
-						<!-- обов'язкова оболонка' -->
-						<div class="cargo__wrapper swiper-wrapper">
-							<!-- слайди -->
-							<div class="cargo__slide swiper-slide">
-								<img src="assets/img/content_item1.png" alt="">
-							</div>
-							<div class="cargo__slide swiper-slide">
-								<img src="assets/img/content_item2.png" alt="">
-							</div>
-							<div class="cargo__slide swiper-slide">
-								<img src="assets/img/content_item3.png" alt="">
-							</div>
-						</div>
-						<div class="cargo__button-prev swiper-button-prev"></div>
-						<div class="cargo__button-next swiper-button-next"></div>
-					</div>
-					<div class="cargo__slider-heart">
-						<a style="color: aliceblue;" href="#">♡</a>
-					</div>
-				</div>
-				<div class="cargo__description">
-					<div class="cargo__description-left">
-						<img src="assets/img/shield.svg" alt="">
-						<img src="assets/img/up.svg" alt="">
-						<p>8 дней назад</p>
-					</div>
-					<div class="cargo__description-right">
-						<div class="circle"></div>
-						<p>Донецк</p>
-					</div>
-				</div>
-				<div class="cargo__title">
-					<a href="#">Рефрижератор Карриер Супра...</a>
-					<p>Продам разварки 4 штуки,катанные, желтый цвет...</p>
-				</div>
-				<div class="cargo__price">
-					<h3>21 000 ₽</h3>
-					<div class="cargo__price__eyes">
-						<p class="cargo__price__eyes__value">1000</p>
-						<img class="cargo__price__eye" src="assets/img/eye.svg" alt="">
-					</div>
-				</div>
-			</div>
-			<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" class="cargo__item favorite">
-				<div class="cargo__slider">
-					<div class="cargo__slider-swiper swiper-container">
-						<!-- обов'язкова оболонка' -->
-						<div class="cargo__wrapper swiper-wrapper">
-							<!-- слайди -->
-							<div class="cargo__slide swiper-slide">
-								<img src="assets/img/content_item1.png" alt="">
-							</div>
-							<div class="cargo__slide swiper-slide">
-								<img src="assets/img/content_item2.png" alt="">
-							</div>
-							<div class="cargo__slide swiper-slide">
-								<img src="assets/img/content_item3.png" alt="">
-							</div>
-						</div>
-						<div class="cargo__button-prev swiper-button-prev"></div>
-						<div class="cargo__button-next swiper-button-next"></div>
-					</div>
-					<div class="cargo__slider-heart">
-						<a style="color: aliceblue;" href="#">♡</a>
-					</div>
-				</div>
-				<div class="cargo__description">
-					<div class="cargo__description-left">
-						<img src="assets/img/shield.svg" alt="">
-						<img src="assets/img/up.svg" alt="">
-						<p>8 дней назад</p>
-					</div>
-					<div class="cargo__description-right">
-						<div class="circle"></div>
-						<p>Донецк</p>
-					</div>
-				</div>
-				<div class="cargo__title">
-					<a href="#">Датчик давления кондиционера</a>
-					<p>Продам разварки 4 штуки,катанные, желтый цвет...</p>
-				</div>
-				<div class="cargo__price">
-					<h3>900 ₽</h3>
-					<div class="cargo__price__eyes">
-						<p class="cargo__price__eyes__value">1000</p>
-						<img class="cargo__price__eye" src="assets/img/eye.svg" alt="">
-					</div>
-				</div>
-			</div>
-			<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" class="cargo__item favorite">
-				<div class="cargo__slider">
-					<div class="cargo__slider-swiper swiper-container">
-						<!-- обов'язкова оболонка' -->
-						<div class="cargo__wrapper swiper-wrapper">
-							<!-- слайди -->
-							<div class="cargo__slide swiper-slide">
-								<img src="assets/img/content_item1.png" alt="">
-							</div>
-							<div class="cargo__slide swiper-slide">
-								<img src="assets/img/content_item2.png" alt="">
-							</div>
-							<div class="cargo__slide swiper-slide">
-								<img src="assets/img/content_item3.png" alt="">
-							</div>
-						</div>
-						<div class="cargo__button-prev swiper-button-prev"></div>
-						<div class="cargo__button-next swiper-button-next"></div>
-					</div>
-					<div class="cargo__slider-heart">
-						<a style="color: aliceblue;" href="#">♡</a>
-					</div>
-				</div>
-				<div class="cargo__description">
-					<div class="cargo__description-left">
-						<img src="assets/img/shield.svg" alt="">
-						<img src="assets/img/up.svg" alt="">
-						<p>8 дней назад</p>
-					</div>
-					<div class="cargo__description-right">
-						<div class="circle"></div>
-						<p>Донецк</p>
-					</div>
-				</div>
-				<div class="cargo__title">
-					<a href="#">Датчик давления кондиционера</a>
-					<p>Продам разварки 4 штуки,катанные, желтый цвет...</p>
-				</div>
-				<div class="cargo__price">
-					<h3>900 ₽</h3>
-					<div class="cargo__price__eyes">
-						<p class="cargo__price__eyes__value">1000</p>
-						<img class="cargo__price__eye" src="assets/img/eye.svg" alt="">
-					</div>
 				</div>
 			</div>
 			<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" class="cargo__item favorite">
@@ -726,10 +508,6 @@
 				</div>
 				<div class="cargo__price">
 					<h3>2 500 ₽</h3>
-					<div class="cargo__price__eyes">
-						<p class="cargo__price__eyes__value">1000</p>
-						<img class="cargo__price__eye" src="assets/img/eye.svg" alt="">
-					</div>
 				</div>
 			</div>
 			<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" class="cargo__item favorite">
@@ -772,10 +550,6 @@
 				</div>
 				<div class="cargo__price">
 					<h3>21 000 ₽</h3>
-					<div class="cargo__price__eyes">
-						<p class="cargo__price__eyes__value">1000</p>
-						<img class="cargo__price__eye" src="assets/img/eye.svg" alt="">
-					</div>
 				</div>
 			</div>
 			<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" class="cargo__item favorite">
@@ -818,10 +592,174 @@
 				</div>
 				<div class="cargo__price">
 					<h3>900 ₽</h3>
-					<div class="cargo__price__eyes">
-						<p class="cargo__price__eyes__value">1000</p>
-						<img class="cargo__price__eye" src="assets/img/eye.svg" alt="">
+				</div>
+			</div>
+			<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" class="cargo__item favorite">
+				<div class="cargo__slider">
+					<div class="cargo__slider-swiper swiper-container">
+						<!-- обов'язкова оболонка' -->
+						<div class="cargo__wrapper swiper-wrapper">
+							<!-- слайди -->
+							<div class="cargo__slide swiper-slide">
+								<img src="assets/img/content_item1.png" alt="">
+							</div>
+							<div class="cargo__slide swiper-slide">
+								<img src="assets/img/content_item2.png" alt="">
+							</div>
+							<div class="cargo__slide swiper-slide">
+								<img src="assets/img/content_item3.png" alt="">
+							</div>
+						</div>
+						<div class="cargo__button-prev swiper-button-prev"></div>
+						<div class="cargo__button-next swiper-button-next"></div>
 					</div>
+					<div class="cargo__slider-heart">
+						<a style="color: aliceblue;" href="#">♡</a>
+					</div>
+				</div>
+				<div class="cargo__description">
+					<div class="cargo__description-left">
+						<img src="assets/img/shield.svg" alt="">
+						<img src="assets/img/up.svg" alt="">
+						<p>8 дней назад</p>
+					</div>
+					<div class="cargo__description-right">
+						<div class="circle"></div>
+						<p>Донецк</p>
+					</div>
+				</div>
+				<div class="cargo__title">
+					<a href="#">Датчик давления кондиционера</a>
+					<p>Продам разварки 4 штуки,катанные, желтый цвет...</p>
+				</div>
+				<div class="cargo__price">
+					<h3>900 ₽</h3>
+				</div>
+			</div>
+			<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" class="cargo__item favorite">
+				<div class="cargo__slider">
+					<div class="cargo__slider-swiper swiper-container">
+						<!-- обов'язкова оболонка' -->
+						<div class="cargo__wrapper swiper-wrapper">
+							<!-- слайди -->
+							<div class="cargo__slide swiper-slide">
+								<img src="assets/img/content_item1.png" alt="">
+							</div>
+							<div class="cargo__slide swiper-slide">
+								<img src="assets/img/content_item2.png" alt="">
+							</div>
+							<div class="cargo__slide swiper-slide">
+								<img src="assets/img/content_item3.png" alt="">
+							</div>
+						</div>
+						<div class="cargo__button-prev swiper-button-prev"></div>
+						<div class="cargo__button-next swiper-button-next"></div>
+					</div>
+					<div class="cargo__slider-heart">
+						<a style="color: aliceblue;" href="#">♡</a>
+					</div>
+				</div>
+				<div class="cargo__description">
+					<div class="cargo__description-left">
+						<img src="assets/img/shield.svg" alt="">
+						<img src="assets/img/up.svg" alt="">
+						<p>8 дней назад</p>
+					</div>
+					<div class="cargo__description-right">
+						<div class="circle"></div>
+						<p>Макеевка</p>
+					</div>
+				</div>
+				<div class="cargo__title">
+					<a href="#">Шины Dunlop Sport Max</a>
+					<p>Продам разварки 4 штуки,катанные, желтый цвет...</p>
+				</div>
+				<div class="cargo__price">
+					<h3>2 500 ₽</h3>
+				</div>
+			</div>
+			<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" class="cargo__item favorite">
+				<div class="cargo__slider">
+					<div class="cargo__slider-swiper swiper-container">
+						<!-- обов'язкова оболонка' -->
+						<div class="cargo__wrapper swiper-wrapper">
+							<!-- слайди -->
+							<div class="cargo__slide swiper-slide">
+								<img src="assets/img/content_item1.png" alt="">
+							</div>
+							<div class="cargo__slide swiper-slide">
+								<img src="assets/img/content_item2.png" alt="">
+							</div>
+							<div class="cargo__slide swiper-slide">
+								<img src="assets/img/content_item3.png" alt="">
+							</div>
+						</div>
+						<div class="cargo__button-prev swiper-button-prev"></div>
+						<div class="cargo__button-next swiper-button-next"></div>
+					</div>
+					<div class="cargo__slider-heart">
+						<a style="color: aliceblue;" href="#">♡</a>
+					</div>
+				</div>
+				<div class="cargo__description">
+					<div class="cargo__description-left">
+						<img src="assets/img/shield.svg" alt="">
+						<img src="assets/img/up.svg" alt="">
+						<p>8 дней назад</p>
+					</div>
+					<div class="cargo__description-right">
+						<div class="circle"></div>
+						<p>Донецк</p>
+					</div>
+				</div>
+				<div class="cargo__title">
+					<a href="#">Рефрижератор Карриер Супра...</a>
+					<p>Продам разварки 4 штуки,катанные, желтый цвет...</p>
+				</div>
+				<div class="cargo__price">
+					<h3>21 000 ₽</h3>
+				</div>
+			</div>
+			<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" class="cargo__item favorite">
+				<div class="cargo__slider">
+					<div class="cargo__slider-swiper swiper-container">
+						<!-- обов'язкова оболонка' -->
+						<div class="cargo__wrapper swiper-wrapper">
+							<!-- слайди -->
+							<div class="cargo__slide swiper-slide">
+								<img src="assets/img/content_item1.png" alt="">
+							</div>
+							<div class="cargo__slide swiper-slide">
+								<img src="assets/img/content_item2.png" alt="">
+							</div>
+							<div class="cargo__slide swiper-slide">
+								<img src="assets/img/content_item3.png" alt="">
+							</div>
+						</div>
+						<div class="cargo__button-prev swiper-button-prev"></div>
+						<div class="cargo__button-next swiper-button-next"></div>
+					</div>
+					<div class="cargo__slider-heart">
+						<a style="color: aliceblue;" href="#">♡</a>
+					</div>
+				</div>
+				<div class="cargo__description">
+					<div class="cargo__description-left">
+						<img src="assets/img/shield.svg" alt="">
+						<img src="assets/img/up.svg" alt="">
+						<p>8 дней назад</p>
+					</div>
+					<div class="cargo__description-right">
+						<div class="circle"></div>
+						<p>Донецк</p>
+					</div>
+				</div>
+				<div class="cargo__title">
+					<a href="#">Датчик давления кондиционера</a>
+					<p>Продам разварки 4 штуки,катанные, желтый цвет...</p>
+				</div>
+				<div class="cargo__price">
+					<h3>900 ₽</h3>
 				</div>
 			</div>
 			<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" class="cargo__item new">
@@ -864,10 +802,6 @@
 				</div>
 				<div class="cargo__price">
 					<h3>900 ₽</h3>
-					<div class="cargo__price__eyes">
-						<p class="cargo__price__eyes__value">1000</p>
-						<img class="cargo__price__eye" src="assets/img/eye.svg" alt="">
-					</div>
 				</div>
 			</div>
 			<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" data-aos="fade-up" class="cargo__item new">
@@ -910,10 +844,6 @@
 				</div>
 				<div class="cargo__price">
 					<h3>900 ₽</h3>
-					<div class="cargo__price__eyes">
-						<p class="cargo__price__eyes__value">1000</p>
-						<img class="cargo__price__eye" src="assets/img/eye.svg" alt="">
-					</div>
 				</div>
 			</div>
 			<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" data-aos="fade-up" class="cargo__item new">
@@ -956,10 +886,6 @@
 				</div>
 				<div class="cargo__price">
 					<h3>900 ₽</h3>
-					<div class="cargo__price__eyes">
-						<p class="cargo__price__eyes__value">1000</p>
-						<img class="cargo__price__eye" src="assets/img/eye.svg" alt="">
-					</div>
 				</div>
 			</div>
 			<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" class="cargo__item new">
@@ -1002,10 +928,6 @@
 				</div>
 				<div class="cargo__price">
 					<h3>900 ₽</h3>
-					<div class="cargo__price__eyes">
-						<p class="cargo__price__eyes__value">1000</p>
-						<img class="cargo__price__eye" src="assets/img/eye.svg" alt="">
-					</div>
 				</div>
 			</div>
 			<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" class="cargo__item new">
@@ -1048,10 +970,6 @@
 				</div>
 				<div class="cargo__price">
 					<h3>900 ₽</h3>
-					<div class="cargo__price__eyes">
-						<p class="cargo__price__eyes__value">1000</p>
-						<img class="cargo__price__eye" src="assets/img/eye.svg" alt="">
-					</div>
 				</div>
 			</div>
 			<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" class="cargo__item new">
@@ -1094,10 +1012,6 @@
 				</div>
 				<div class="cargo__price">
 					<h3>900 ₽</h3>
-					<div class="cargo__price__eyes">
-						<p class="cargo__price__eyes__value">1000</p>
-						<img class="cargo__price__eye" src="assets/img/eye.svg" alt="">
-					</div>
 				</div>
 			</div>
 			<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" class="cargo__item new">
@@ -1140,10 +1054,6 @@
 				</div>
 				<div class="cargo__price">
 					<h3>900 ₽</h3>
-					<div class="cargo__price__eyes">
-						<p class="cargo__price__eyes__value">1000</p>
-						<img class="cargo__price__eye" src="assets/img/eye.svg" alt="">
-					</div>
 				</div>
 			</div>
 			<div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" class="cargo__item new">
@@ -1186,10 +1096,6 @@
 				</div>
 				<div class="cargo__price">
 					<h3>900 ₽</h3>
-					<div class="cargo__price__eyes">
-						<p class="cargo__price__eyes__value">1000</p>
-						<img class="cargo__price__eye" src="assets/img/eye.svg" alt="">
-					</div>
 				</div>
 			</div>
 		</div>
