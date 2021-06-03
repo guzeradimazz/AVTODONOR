@@ -82,3 +82,4 @@ var CharTimeout1 = 50; // скорость печатания
 	}
 
 startTicker1();
+//parallax
